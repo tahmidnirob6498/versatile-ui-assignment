@@ -1,0 +1,133 @@
+/* shared style */
+.black-gray{
+  background-color: rgba(17, 17, 17, 1);
+  }
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.white{
+    color:rgba(255, 255, 255, 1);
+}
+.orange{
+    background-color: rgba(230, 83, 60, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.radius{
+    border-radius: 3rem;
+    padding: 0.45rem;
+    
+}
+body{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    overflow-x: hidden;
+
+}
+/* navigation */
+.brand-name,.navbar,.nav-item{
+    list-style: none;
+}
+.fitness{
+    color: rgba(230, 83, 60, 1);
+}
+nav{
+    padding-top: 1rem;
+}
+nav i{
+    display: none;
+}
+.brand-name{
+    justify-content: space-around;
+}
+.navbar{
+    width: auto;
+    gap: 3rem;
+    text-align: center;
+
+
+}
+nav .fitness{
+    font-size: 2rem;
+    font-weight: 900;
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-around;
+}
+.banner-title{
+    width: 40%;
+
+}
+.banner-head{
+    font-size: 5rem;
+}
+.descript{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.2;
+}
+.tap{
+    padding: 1rem 2.9rem;
+    border-radius: 2.6rem;
+}
+.banner-img{
+    transform: translateX(-6rem);
+    max-width: 100%;
+    
+}
+/* media query */
+@media screen and (max-width:576px) {
+
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    nav i{
+        display: block;
+    }
+    nav .nav-item{
+        display: none;
+    }
+    nav .brand-name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+    }
+    
+    .banner{
+        flex-direction: column;
+    }
+    .banner-title{
+        max-width: 100%;
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .banner-head{
+        font-size: 2.4rem;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.6rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .buttons button{
+        padding: 1rem 2.5rem;
+    }
+    .banner-img{
+        transform: translateX(0);
+        max-width: 100%;
+        display: block;
+    }
+}
