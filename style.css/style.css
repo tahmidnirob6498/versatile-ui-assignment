@@ -11,6 +11,10 @@
 .white{
     color:rgba(255, 255, 255, 1);
 }
+.gray{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.2;
+}
 .orange{
     background-color: rgba(230, 83, 60, 1);
     color: rgba(255, 255, 255, 1);
@@ -20,6 +24,7 @@
     padding: 0.45rem;
     
 }
+
 body{
     max-width: 1440px;
     width: 100%;
@@ -34,11 +39,12 @@ body{
 }
 .fitness{
     color: rgba(230, 83, 60, 1);
+    margin-top: 1rem;
 }
 nav{
     padding-top: 1rem;
 }
-nav i{
+nav .navbar i{
     display: none;
 }
 .brand-name{
@@ -51,6 +57,9 @@ nav i{
     border: 1px solid rgb(37, 33, 33)
 
 
+}
+.navbar .nav-item{
+    padding: 1rem;
 }
 nav .fitness{
     font-size: 2rem;
@@ -86,7 +95,40 @@ flex-direction:}
     max-width: 100%;
     
 }
+.habits{
+    background-color: rgba(17, 17, 17, 1);;
+    
+}
+.habits-head{
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+    margin: 0;
+    
+}
+.habits-title{
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.habits-title h3{
+    font-size: 1.2rem;
+}
+.habits-title p{
+    font-size: 0.8rem;
+}
+.habits-type img{
+    border-radius: 50%;
+}
+.habits-type{
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    grid: 1;
+    align-items: center;
+    margin: 0 10rem;
 
+}
 /* media query */
 @media screen and (max-width:576px) {
 
@@ -94,12 +136,15 @@ flex-direction:}
         width: 100%;
         overflow-x: hidden;
         box-sizing: border-box;
+        
     }
-    nav i{
+    nav .navbar i{
         display: block;
+        padding-top: 1rem;
     }
     nav .nav-item{
         display: none;
+
     }
     nav .brand-name{
         display: flex;
@@ -146,4 +191,39 @@ flex-direction:}
         max-width: 100%;
         display: block;
     }
+    .habits-type{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        gap: 2;
+    }
+    .habits-title{
+        width: 100%;
+    }
+    .habits-title p{
+        padding: 0 1rem;
+    }
+    
 }
+@media screen and (min-width:576px) and (max-width:1000px){
+    .navbar{
+        gap: 0rem;
+    }
+    nav .brand-name{
+    justify-content: space-between;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+    }
+    .banner-title{
+        width: 80%;
+    }
+    .habits-type{
+        grid-template-columns: repeat(2,2fr);
+        gap: 3.5rem;
+    }
+    
+    
+    }
