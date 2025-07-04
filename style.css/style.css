@@ -48,6 +48,7 @@ nav i{
     width: auto;
     gap: 3rem;
     text-align: center;
+    border: 1px solid rgb(37, 33, 33)
 
 
 }
@@ -67,6 +68,8 @@ nav .fitness{
 .banner-head{
     font-size: 5rem;
 }
+.banner .buttons{
+flex-direction:}
 .descript{
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.2;
@@ -75,11 +78,15 @@ nav .fitness{
     padding: 1rem 2.9rem;
     border-radius: 2.6rem;
 }
+.buttons1{
+    display: none;
+}
 .banner-img{
     transform: translateX(-6rem);
     max-width: 100%;
     
 }
+
 /* media query */
 @media screen and (max-width:576px) {
 
@@ -115,15 +122,24 @@ nav .fitness{
         font-size: 2.4rem;
     }
     .buttons{
+        display: none;
+    }
+    .buttons1{
+        
+        max-width: 576px;
         width: 100%;
+
         display: flex;
         flex-direction: row;
         gap: 0.6rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        
+    
+        display: block;
+    
     }
     .buttons button{
         padding: 1rem 2.5rem;
+        /* width: 100%; */
     }
     .banner-img{
         transform: translateX(0);
