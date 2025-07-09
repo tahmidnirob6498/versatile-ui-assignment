@@ -228,7 +228,7 @@ nav .fitness{
 }
 /* BMI */
 .topic{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 2rem;
@@ -350,6 +350,43 @@ th,td{
         position: absolute;
         bottom: 0.5rem;
         left: 1rem;
+    }
+    /* Fitness */
+    footer{
+        padding: 3rem 0;
+    }
+
+    footer li{
+        color: rgba(255, 255, 255, 0.5);
+        list-style: none;
+        margin-bottom: 1.3rem;
+    }
+    .fitness{
+        font-size:4rem;
+    }
+    .start{
+        display: flex;
+       gap: 3rem;
+    }
+    .get-start{
+        transform: translateX(2rem);
+        margin-bottom: 1.5rem;
+    }
+    .Fitness{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .Fitness-title{
+        width: 50%;
+    }
+    .Fitness-title h1{
+        margin-bottom: 0;
+    }
+    .Fitness-title p{
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 
 
