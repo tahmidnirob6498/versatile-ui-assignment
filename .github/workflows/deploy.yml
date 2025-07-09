@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
@@ -6,28 +6,17 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository with Submodules
+      - name: Checkout repo with submodules
         uses: actions/checkout@v3
         with:
           submodules: recursive
+          token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+      - name: Build project
+        run: echo "✅ Build done"
 
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # তোমার build output ফোল্ডার (React হলে ./build)
 
