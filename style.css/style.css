@@ -599,12 +599,6 @@ th,td{
 .calculate-bmi p{
     font-size: 0.85rem;
 }
-/* input[id="weight"],input[id="height"],input[id="age"],.gender{
-   width:
-} */
-/* .activity{
-    width: 180%;
-} */
 
  .calculate-bmi form{
     width: 100%;
@@ -628,10 +622,6 @@ th,td{
     margin-bottom: 8px;
     padding: 0.4rem 0;
     padding-left: 0.2rem;
-   }
-   select {
-    /* padding: 0.4rem 0;
-    padding-left: 0.2rem; */
    }
    .gender{
     padding: 0;
