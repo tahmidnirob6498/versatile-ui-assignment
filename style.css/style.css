@@ -191,10 +191,10 @@ nav .fitness{
 .training-images {
     max-width: 70%;
     margin: 0 auto;
-
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  padding-left: 10rem;
   
   /* gap: 1.5rem; */
 }
@@ -206,26 +206,26 @@ nav .fitness{
   display: block;
 }
 .img1{
-    width: 230px;   
+    width: 250px;   
 }
 .img2{
-    width: 500px;
+    width: 340px;
 }
 
 .img3{
-    width:270px;
+    width:280px;
 }
 
 .img4{ 
-    width: 403px;
+    width: 320px;
 }
 
 .img5{
-    width:288px;
+    width:265px;
 }
 
 .img6{
-    width: 313px;
+    width: 285px;
 }
 /* BMI */
 .topic{
@@ -527,6 +527,8 @@ th,td{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 1rem;
+    padding-left: 0;
+
 }
 
 .training-images img {
