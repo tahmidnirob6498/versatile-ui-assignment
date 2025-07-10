@@ -182,6 +182,8 @@ nav .fitness{
 .training-description{
     transform: translateX(16rem);
     padding: 3rem 0;
+    width: 60%;
+
 }
 .training-description h1{
           font-size: 3rem;
@@ -194,7 +196,8 @@ nav .fitness{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   align-items: stretch;
- row-gap: 1rem;
+ gap: 1rem;
+ 
 }
 
 .training-images img {
