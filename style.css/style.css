@@ -351,7 +351,7 @@ th,td{
         bottom: 0.5rem;
         left: 1rem;
     }
-    /* Fitness */
+    /* Footer */
     footer{
         padding: 3rem 0;
     }
@@ -377,6 +377,8 @@ th,td{
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid rgb(67, 67, 67);
     }
     .Fitness-title{
         width: 50%;
@@ -388,6 +390,13 @@ th,td{
         font-size: 0.9rem;
         line-height: 1.5;
     }
+    .conclusion{
+         color: rgba(255, 255, 255, 0.5);
+         text-align: center;
+         padding-top: 0.8rem;
+    }
+    
+
 
 
 
@@ -574,7 +583,7 @@ th,td{
    margin: 0 auto;
  }
 .bmi .bmi-measure{
-    width: calc(100% - 1rem);
+    width: 92%;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 1rem;
@@ -590,15 +599,27 @@ th,td{
 .calculate-bmi p{
     font-size: 0.85rem;
 }
-input[id="weight"]{
-    width: 44%;
-}
-.gender {
-    width: 44%;
-   }
-   .activity{
-    width: 98%;
-   }
+/* input[id="weight"],input[id="height"],input[id="age"],.gender{
+   width:
+} */
+/* .activity{
+    width: 180%;
+} */
+
+ .calculate-bmi form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+ }
+ .calculate-bmi label{
+    width: 50%;
+ }
+ .calculate-bmi form input{
+    width: 90%;
+ }
+
    form button{
     margin-top: 0.5rem;
    }
@@ -608,9 +629,13 @@ input[id="weight"]{
     padding: 0.4rem 0;
     padding-left: 0.2rem;
    }
-   select{
-    padding: 0.4rem 0;
-    padding-left: 0.2rem;
+   select {
+    /* padding: 0.4rem 0;
+    padding-left: 0.2rem; */
+   }
+   .gender{
+    padding: 0;
+    height: 1.9rem;
    }
     /* Team */
     .team h1{
@@ -626,6 +651,42 @@ input[id="weight"]{
         grid-template-columns: repeat(1,1fr);
         width: 80%;
     }
+    /* footer */
+
+.start,.Fitness{
+    flex-direction: column;
+}
+
+     footer{
+        padding: 1.5rem 0;
+    }
+
+    .fitness{
+        font-size:3.5rem;
+    }
+    .start{
+       gap: 0rem;
+    }
+    .get-start{
+        transform: translateX(0rem);
+    
+    }
+    .Fitness{
+        width: 90%;
+        padding-bottom: 1rem;}
+    .Fitness-title{
+        width: 100%;
+    }
+
+    .Fitness-title p{
+        font-size: 0.85rem;
+      }
+
+.foot-start ul{
+    padding-left: 1rem;
+}
+    
+
 }
 @media screen and (min-width:576px) and (max-width:1000px){
     .navbar{
